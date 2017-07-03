@@ -14,8 +14,8 @@ with open(outfile,'w+') as f:
             field_names = [field.name for field in fields]  
             #--write all field names to the output file
             all_field_names = ([mydir])
-            file_name = ([file])// new lines added by knw
-            all_field_names.extend(file_name)// new lines added by knw
-            all_field_names.extend(field_names)// new lines added by knw
+            file_name = ([file])# new line added by knw
+            all_field_names.extend(file_name)# new line added by knw
+            all_field_names.extend(field_names)# new line added by knw
             w.writerow(all_field_names) 
 f.close
