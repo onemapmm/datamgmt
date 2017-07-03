@@ -25,7 +25,7 @@ with open(outfile,'w+') as f:
             fields = arcpy.ListFields(file)  
             field_names = [field.name for field in fields]  
             #--write file names and all field names to the output file
-            all_field_names = ([file])// new lines added by knw
-            all_field_names.extend(field_names) // new lines added by knw
+            all_field_names = ([file]) # new line added by knw
+            all_field_names.extend(field_names) # new line added by knw
             w.writerow(all_field_names) 
 f.close
