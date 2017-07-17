@@ -1,10 +1,9 @@
 ##list field name of all shp files in subdirectories
 import arcpy,csv,os  
   
-#mydir = r'C:\Users\william\Documents\MIMU\Data\Transport\\'
 mydir = r'D:\20161212_Basic ArcGIS Training\Day1\Data'
 outfile = r'C:\temp\test3.txt'        
-#below code borrowed from https://goo.gl/g6Mihd
+#below code borrowed from https://goo.gl/g6Mihd to list files under sub directories
 def list_files(dir):                                                                                                  
     r = []                                           
     subdirs = [x[0] for x in os.walk(dir)]
